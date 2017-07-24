@@ -23,8 +23,6 @@ def addup(payment, code):
         amount = add_payafter(code, menu, gallons)
     return amount
 
-
-
 payment = valid_pay()
 
 selection = """ Select Code Of Gas Type:
@@ -38,9 +36,7 @@ amount = addup(payment,code)
 
 logit(code,amount,payment)
 
-str_inventory = load_inventory()
-
-inventory = return_inventory(str_inventory)
+inventory = load_inventory()
 
 message = write_message(inventory,code,amount)
 

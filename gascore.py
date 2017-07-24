@@ -1,17 +1,8 @@
-
-
 menu= [
     ['Regular', 2.08],
     ['Midgrade', 2.23],
     ['Premium', 2.36]  
 ]
-
-def return_inventory(str_inventory):
-    inventory = []
-    for item in str_inventory:
-        sub_list = item.split(', ')
-        inventory.append([sub_list[0], (sub_list[1].strip()), float(sub_list[2].strip()), float(sub_list[3].strip())])
-    return inventory
 
 def write_message(inventory, code, amount):
     message = 'Num, Type, Gallons, Price'

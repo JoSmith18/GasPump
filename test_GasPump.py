@@ -13,3 +13,5 @@ def test_revenue():
     assert revenue([['1', 'Regular', 1, 2.13]]) == 2.13
     assert revenue([['2', 'Midgrade', 2, 4.46],['1', 'Regular', 1, 2.13]]) == 6.59
 
+def test_return_inventory():
+    assert return_inventory([['1', 'Regular', 2300, 2.08], ['3', 'Premium', 4000, 2.36]]) == akdhfk

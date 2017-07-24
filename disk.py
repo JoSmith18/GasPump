@@ -5,9 +5,9 @@ def load_inventory():
         tank.readline()
         items = []
         for line in tank.readlines():
-            items.append(line.split())
-            str_inventory = items
-    return str_inventory
+            pieces = line.split(', ')
+            items.append([pieces[0], pieces[1], float(pieces[2]), float(pieces[3])])
+    return items
 
 def open_tank(message):
     with open("tank.txt",'w') as tank:
