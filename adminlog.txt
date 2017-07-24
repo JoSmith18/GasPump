@@ -1,0 +1,15 @@
+Name, Choice, Date and Time
+Tae,Checked Revenue, 2017-07-10 13:22:51.426603
+Shedlia,Opened Log, 2017-07-10 13:24:29.882801
+Tae,Checked Revenue, 2017-07-10 13:35:56.473940
+Tae,Refilled Tanks, 2017-07-10 13:36:27.723900
+John,Checked Revenue, 2017-07-10 14:59:37.277501
+Tae,Look At The Tank, 2017-07-10 15:48:34.335383
+Shedlia,Look At The Tank, 2017-07-10 15:51:11.999744
+Tae,Looked At Tank, 2017-07-11 13:55:57.483911
+John,Opened Log, 2017-07-11 14:03:01.846436
+Jo'Tavious Smith,Looked At Tank, 2017-07-11 15:40:42.934718
+Joh Do,Checked Revenue, 2017-07-11 15:41:00.457080
+James Henry,Opened Log, 2017-07-11 15:41:21.013065
+,None, 2017-07-11 15:42:13.665566
+John,Looked At Tank, 2017-07-24 09:25:04.014706
