@@ -1,5 +1,6 @@
-from gascore import refill, revenue, load_inventory, choices
-from datetime import datetime
+from gascore import *
+from datetime import *
+from disk import *
 
 inventory = load_inventory()
 
@@ -17,18 +18,18 @@ decision = """ Admin Decisions
 choice = input(decision)
 
 if choice.strip() == '1'.strip():
-    refill(inventory)
+    message = refill(inventory)
+    open_tank(message)
     with open("tank.txt", "r") as tank:
         print(tank.read())
-        
 
 elif choice.strip() == '2'.strip():
-    print(revenue())
+    text = open_log()
+    print(revenue(text))
 
 elif choice.strip() == '3'.strip():
     with open("log.txt", "r") as file:
         print(file.read())
-        
 
 elif choice.strip() == '4'.strip():
     with open("tank.txt","r") as tanks:
