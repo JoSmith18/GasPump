@@ -17,14 +17,14 @@ def add_prepay(money, code, menu):
         if item[0] == gas_name(code):
             print('Gallons =', float(money / item[1]))
             gallons = float(money / item[1])
-            return([gallons,money])
+            return([round(gallons,2),money])
 
 def add_payafter(code, menu, gallons):
     for item in menu:
         if item[0] == gas_name(code):
             print('Cash Due=',float(gallons * item[1]))
             money = float(gallons * item[1])
-            return([gallons,money])
+            return([round(gallons,2),money])
 
 def gas_name(code):
     if code == '1':
