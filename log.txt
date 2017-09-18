@@ -69,3 +69,4 @@ Code, Type, Gallons, Price
 1, Regular, 12, 24.96
 2, Midgrade, 5.381165919282512, 12.00
 1, Regular, 5.769230769230769, 12.00
+1, Regular, 12, 24.96
