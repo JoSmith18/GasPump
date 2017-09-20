@@ -1,46 +1,58 @@
-menu= [
-    ['Regular', 2.08],
-    ['Midgrade', 2.23],
-    ['Premium', 2.36]  
-]
+#          ___      ___        ::::::::::::::::::::::::
+#         [_ _]    [_ _]   _   Made by Jo'Tavious Smith
+#    /|  ___$________S_   | \
+#   / |-/        ____  [++| |+
+#  <<<<<---<|  |>____O)<ooo>|
+#   \ |-\___ ________ _[++| |+
+#    \|    _$_      _S_   |_/       :::::::::::::::::::::::
+#         [___]    [___]            jsmith@basecampcodingacademy.org
+menu = [['Regular', 2.08], ['Midgrade', 2.23], ['Premium', 2.36]]
+
 
 def write_message(inventory, code, amount):
     message = 'Num, Type, Gallons, Price'
     for item in inventory:
-        if item [1] == gas_name(code):
-            item [2] = item [2] - amount[0]
-        message += ('\n{0}, {1}, {2:.2f}, {3:.2f}'.format(item[0], item[1], item[2],item[3]))
+        if item[1] == gas_name(code):
+            item[2] = item[2] - amount[0]
+        message += ('\n{0}, {1}, {2:.2f}, {3:.2f}'.format(
+            item[0], item[1], item[2], item[3]))
     return message
+
 
 def add_prepay(money, code, menu):
     for item in menu:
         if item[0] == gas_name(code):
             print('Gallons =', float(money / item[1]))
             gallons = float(money / item[1])
-            return([round(gallons,2),money])
+            return ([round(gallons, 2), money])
+
 
 def add_payafter(code, menu, gallons):
     for item in menu:
         if item[0] == gas_name(code):
-            print('Cash Due=',float(gallons * item[1]))
+            print('Cash Due=', float(gallons * item[1]))
             money = float(gallons * item[1])
-            return([round(gallons,2),money])
+            return ([round(gallons, 2), money])
+
 
 def gas_name(code):
     if code == '1':
-        return('Regular')
+        return ('Regular')
     elif code == '2':
-        return('Midgrade')
+        return ('Midgrade')
     elif code == '3':
-        return('Premium')
+        return ('Premium')
     else:
         return ("Error Start Over")
- 
+
+
 def refill(inventory):
     message = 'Num, Type, Gallons, Price'
     for item in inventory:
-            message += ('\n{0}, {1}, {2:.2f}, {3:.2f}'.format(item[0], item[1], float(5000.00),float(item[3])))
+        message += ('\n{0}, {1}, {2:.2f}, {3:.2f}'.format(
+            item[0], item[1], float(5000.00), float(item[3])))
     return message
+
 
 def revenue(text):
     total = 0
@@ -48,6 +60,7 @@ def revenue(text):
         price = item
         total += float(price[3])
     return total
+
 
 def choices(choice):
     """
@@ -61,10 +74,10 @@ def choices(choice):
     'Looked At Tank'
     """
     if choice == '1':
-         return('Refilled Tanks')
-    elif choice =='2':
-        return('Checked Revenue')
+        return ('Refilled Tanks')
+    elif choice == '2':
+        return ('Checked Revenue')
     elif choice == '3':
-        return('Opened Log')
+        return ('Opened Log')
     elif choice == '4':
-        return('Looked At Tank')
+        return ('Looked At Tank')
