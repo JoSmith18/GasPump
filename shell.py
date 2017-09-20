@@ -1,5 +1,4 @@
 from gascore import *
-from datetime import *
 from disk import *
 
 
@@ -95,7 +94,7 @@ def admin_main():
         else:
             print("Invalid Password!!\n")
 
-    write_log()
+    write_log(name, choice)
 
 
 def main():

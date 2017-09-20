@@ -1,4 +1,4 @@
 Num, Type, Gallons, Price
-1, Regular, 4982.23, 2.13
-2, Midgrade, 5000.00, 2.23
+1, Regular, 5000.00, 2.13
+2, Midgrade, 4979.03, 2.23
 3, Premium, 5000.00, 2.36
